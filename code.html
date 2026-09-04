@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<html class="light" lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>คิมคนขายประกัน - ที่ปรึกษาและตัวแทนประกันชีวิตมืออาชีพ</title>
+<!-- Google Fonts: Plus Jakarta Sans & Prompt for clear Thai-first legibility -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Prompt:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-fixed-dim": "#b0c9e8",
+            "on-primary-fixed-variant": "#314863",
+            "tertiary-fixed-dim": "#ffb95f",
+            "surface-container-highest": "#e0e3e5",
+            "on-tertiary-fixed-variant": "#653e00",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#b0c9e8",
+            "surface-tint": "#49607c",
+            "on-secondary-fixed-variant": "#005049",
+            "surface-variant": "#e0e3e5",
+            "surface-container-low": "#f2f4f6",
+            "outline": "#74777e",
+            "inverse-on-surface": "#eff1f3",
+            "primary": "#001428",
+            "on-error-container": "#93000a",
+            "on-surface": "#191c1e",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#43474d",
+            "outline-variant": "#c3c6ce",
+            "secondary": "#006a61",
+            "tertiary-container": "#3b2200",
+            "surface-bright": "#f7f9fb",
+            "inverse-surface": "#2d3133",
+            "tertiary": "#1f1000",
+            "secondary-container": "#86f2e4",
+            "on-primary-fixed": "#011d35",
+            "background": "#f7f9fb",
+            "secondary-fixed": "#89f5e7",
+            "primary-container": "#0f2942",
+            "on-secondary": "#ffffff",
+            "surface": "#f7f9fb",
+            "on-secondary-container": "#006f66",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed": "#2a1700",
+            "primary-fixed": "#d1e4ff",
+            "on-primary-container": "#7991af",
+            "surface-container": "#eceef0",
+            "on-secondary-fixed": "#00201d",
+            "surface-container-high": "#e6e8ea",
+            "tertiary-fixed": "#ffddb8",
+            "on-tertiary": "#ffffff",
+            "on-error": "#ffffff",
+            "surface-dim": "#d8dadc",
+            "on-tertiary-container": "#c77f00",
+            "on-background": "#191c1e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.25rem",
+            "space-xl": "1.5rem",
+            "gutter-desktop": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-sm": "0.75rem",
+            "space-2xs": "0.25rem",
+            "space-md": "1rem",
+            "space-xs": "0.5rem",
+            "space-3xl": "2.5rem",
+            "space-2xl": "2rem",
+            "margin-tablet": "1.5rem",
+            "space-4xl": "3.5rem",
+            "gutter-mobile": "0.75rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "label-lg": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "headline-sm": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "headline-lg": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "body-sm": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "headline-md": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "display-lg": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "body-lg": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "body-md": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "label-sm": ["Prompt", "plusJakartaSans", "sans-serif"],
+            "label-md": ["Prompt", "plusJakartaSans", "sans-serif"]
+          },
+          "fontSize": {
+            "display-lg-mobile": [
+              "28px",
+              {
+                "lineHeight": "40px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "700"
+              }
+            ],
+            "label-lg": [
+              "15px",
+              {
+                "lineHeight": "22px",
+                "letterSpacing": "0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-sm": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "letterSpacing": "0em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg": [
+              "24px",
+              {
+                "lineHeight": "36px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-sm": [
+              "12px",
+              {
+                "lineHeight": "20px",
+                "letterSpacing": "0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-md": [
+              "20px",
+              {
+                "lineHeight": "32px",
+                "letterSpacing": "0em",
+                "fontWeight": "600"
+              }
+            ],
+            "display-lg": [
+              "36px",
+              {
+                "lineHeight": "52px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-lg": [
+              "16px",
+              {
+                "lineHeight": "26px",
+                "letterSpacing": "0em",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "14px",
+              {
+                "lineHeight": "24px",
+                "letterSpacing": "0em",
+                "fontWeight": "400"
+              }
+            ],
+            "label-sm": [
+              "11px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.03em",
+                "fontWeight": "700"
+              }
+            ],
+            "label-md": [
+              "13px",
+              {
+                "lineHeight": "18px",
+                "letterSpacing": "0.02em",
+                "fontWeight": "600"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Prompt', 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #f7f9fb;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #006a61;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 106, 97, 0.35);
+      border: 2px solid #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface pb-28">
+<!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
+<header class="sticky top-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-mobile h-14 max-w-md mx-auto">
+<!-- Leading: Avatar + Brand Anchor -->
+<div class="flex items-center space-x-2.5">
+<div class="relative w-9 h-9 rounded-full overflow-hidden border border-outline-variant/60 flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A warm and professional portrait of Thai male insurance consultant Agent Kim dressed in a tailored modern navy suit, friendly smile, clean high-key studio lighting with soft corporate blue tones, expressing deep trustworthy financial advisory expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKfRxJ-U57X5KUEQcpuH4BKKidY6GFnxUW9kkM185tFEVwJRo10oKyMdxE710Oc0CKeyxSjov437vncZvXtpI-9PhwSYu72JOcanvYsrzdFl61ZjIeNo8nP4I8bsOJbrDXgLab4f6bUs4dB8A1kfEfd9rDilWAjxhg7rFAQ92YWvwdbUR9zZq4j20UQaNahHl2nvlM-dWf5p9bEOCYnTxc58UiPE4w0yAR3ggaR_wsvzEeA6eGWQwQPw"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-white"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center space-x-1">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">คิมคนขายประกัน</span>
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-body-sm text-[10px] text-on-surface-variant leading-none">ที่ปรึกษาการเงินและประกัน คปภ.</span>
+</div>
+</div>
+<!-- Trailing Action: Consult Free CTA Button -->
+<a class="inline-flex items-center justify-center px-3 py-1.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container active:scale-[0.98] transition-transform duration-100" href="#consultation-form">
+<span class="material-symbols-outlined text-[15px] mr-1">chat</span>
+<span>ปรึกษาฟรี</span>
+</a>
+</div>
+</header>
+<!-- ================= MAIN CONTAINER (Max Mobile Width) ================= -->
+<main class="max-w-md mx-auto px-margin-mobile space-y-6 pt-3">
+<!-- ================= HERO SECTION ================= -->
+<section class="relative rounded-2xl bg-gradient-to-br from-primary-container via-[#0d2238] to-[#081726] text-white p-space-lg shadow-md overflow-hidden">
+<!-- Decorative Glow Subtle Ring -->
+<div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-amber-500/10 blur-3xl pointer-events-none"></div>
+<!-- Verified Broker Badge -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-[#86f2e4] font-label-sm text-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span>ใบอนุญาตตัวแทน คปภ. เลขที่ 64010928xx</span>
+</div>
+<!-- Headline & Subtitle -->
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-white leading-tight mb-2 tracking-tight">
+        วางแผนประกันให้คุ้มค่า<br/>
+<span class="text-tertiary-fixed-dim">ดูแลด้วยใจ</span> ตรงไปตรงมา
+      </h1>
+<p class="font-body-md text-body-md text-surface-container-highest/90 leading-relaxed mb-4">
+        โดย <strong class="text-white font-semibold">คิม</strong> ตัวแทนประกันชีวิตและที่ปรึกษาการเงินมืออาชีพ ให้คำปรึกษาฟรีไม่มีผูกมัด คัดสรรแผนที่ดีที่สุดจากบริษัทประกันชั้นนำ
+      </p>
+<!-- Trust Metrics Bar -->
+<div class="grid grid-cols-3 gap-2 py-2.5 px-3 rounded-xl bg-surface-container-lowest/10 backdrop-blur-sm mb-5 border border-white/10 text-center">
+<div class="border-r border-white/10 pr-1">
+<div class="font-headline-sm text-headline-sm text-white font-bold">10+ ปี</div>
+<div class="font-body-sm text-[11px] text-surface-container-highest">ประสบการณ์</div>
+</div>
+<div class="border-r border-white/10 px-1">
+<div class="font-headline-sm text-headline-sm text-secondary-container font-bold">5,000+</div>
+<div class="font-body-sm text-[11px] text-surface-container-highest">ลูกค้าไว้วางใจ</div>
+</div>
+<div class="pl-1">
+<div class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">100%</div>
+<div class="font-body-sm text-[11px] text-surface-container-highest">เคลมสะดวก</div>
+</div>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-col gap-2.5">
+<a class="w-full h-12 flex items-center justify-center gap-2 rounded-xl bg-amber-400 hover:bg-amber-500 text-primary font-label-lg text-label-lg shadow-md active:scale-[0.98] transition-transform" href="#calculator">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+<span>ประเมินเบี้ยประกันฟรี</span>
+</a>
+<a class="w-full h-12 flex items-center justify-center gap-2 rounded-xl bg-secondary hover:bg-secondary/90 text-white font-label-lg text-label-lg shadow-sm active:scale-[0.98] transition-transform" href="https://line.me" target="_blank">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>ทักไลน์คุยกับคิม (@kiminsurance)</span>
+</a>
+</div>
+</section>
+<!-- ================= QUICK CATEGORY SELECT ================= -->
+<section>
+<div class="flex items-center justify-between mb-3">
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">หมวดหมู่แผนประกัน</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">เลือกแผนความคุ้มครองที่ตรงกับเป้าหมายชีวิตคุณ</p>
+</div>
+<span class="font-label-sm text-secondary font-bold">6 หมวดหลัก</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Cat 1 -->
+<a class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_2px_8px_-2px_rgba(15,41,66,0.05)] hover:border-secondary transition-colors flex items-start gap-3 active:scale-[0.98]" href="#plans">
+<div class="w-10 h-10 rounded-xl bg-teal-50 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-primary leading-tight">สุขภาพเหมาจ่าย</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">เคลมง่าย สบายกระเป๋า</p>
+</div>
+</a>
+<!-- Cat 2 -->
+<a class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_2px_8px_-2px_rgba(15,41,66,0.05)] hover:border-secondary transition-colors flex items-start gap-3 active:scale-[0.98]" href="#plans">
+<div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">receipt_long</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-primary leading-tight">ชีวิต &amp; ลดหย่อนภาษี</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">สิทธิ์คืนภาษีเต็ม 1 แสน</p>
+</div>
+</a>
+<!-- Cat 3 -->
+<a class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_2px_8px_-2px_rgba(15,41,66,0.05)] hover:border-secondary transition-colors flex items-start gap-3 active:scale-[0.98]" href="#plans">
+<div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">ecg_heart</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-primary leading-tight">โรคร้ายแรง เจอ จ่าย</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">รับเงินก้อนฟื้นฟูทันที</p>
+</div>
+</a>
+<!-- Cat 4 -->
+<a class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_2px_8px_-2px_rgba(15,41,66,0.05)] hover:border-secondary transition-colors flex items-start gap-3 active:scale-[0.98]" href="#plans">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">personal_injury</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-primary leading-tight">อุบัติเหตุส่วนบุคคล</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">ดูแล 24 ชม. ทั่วโลก</p>
+</div>
+</a>
+<!-- Cat 5 -->
+<a class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_2px_8px_-2px_rgba(15,41,66,0.05)] hover:border-secondary transition-colors flex items-start gap-3 active:scale-[0.98]" href="#plans">
+<div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">savings</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-primary leading-tight">สะสมทรัพย์ &amp; บำนาญ</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">การันตีเงินเกษียณสุข</p>
+</div>
+</a>
+<!-- Cat 6 -->
+<a class="p-3.5 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0_2px_8px_-2px_rgba(15,41,66,0.05)] hover:border-secondary transition-colors flex items-start gap-3 active:scale-[0.98]" href="#plans">
+<div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">directions_car</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-primary leading-tight">ประกันรถยนต์ &amp; พรบ.</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">เทียบราคาชั้นนำทันที</p>
+</div>
+</a>
+</div>
+</section>
+<!-- ================= FEATURED INSURANCE PLANS ================= -->
+<section class="space-y-4" id="plans">
+<div class="flex items-center justify-between">
+<div>
+<span class="inline-block px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 font-label-sm text-[10px] uppercase font-bold mb-1">Top Recommendations</span>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">แผนประกันยอดนิยม</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">คัดพิเศษเพื่อคุณ</span>
+</div>
+<!-- Plan Card 1: Health First Class -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-space-lg shadow-[0_4px_16px_-4px_rgba(15,41,66,0.06)] relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-gradient-to-l from-amber-400 to-amber-300 text-primary font-label-sm text-[11px] font-bold px-3 py-1 rounded-bl-xl shadow-sm">
+          ★ แผนแนะนำยอดฮิต
+        </div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded-md bg-teal-50 text-secondary font-label-sm text-[11px] font-semibold border border-teal-200">
+            คุ้มครองทันที
+          </span>
+<span class="font-body-sm text-[12px] text-outline">เหมาจ่ายรายปี</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">ประกันสุขภาพเหมาจ่าย First Class</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">หมดกังวลค่ารักษาพยาบาล รพ. เอกชนชั้นนำระดับประเทศ</p>
+<!-- Main Metric Block -->
+<div class="my-4 p-3.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-baseline justify-between">
+<div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">วงเงินรักษาเหมาจ่ายสูงสุด</div>
+<div class="font-headline-lg text-headline-lg font-bold text-secondary">5,000,000 <span class="text-sm font-normal text-on-surface">บ./ปี</span></div>
+</div>
+<div class="text-right">
+<div class="font-body-sm text-[11px] text-on-surface-variant">เริ่มต้นเฉลี่ยวันละ 48 บ.</div>
+<div class="font-label-md text-label-md font-bold text-primary">฿1,450 /เดือน</div>
+</div>
+</div>
+<!-- Highlight Grid -->
+<ul class="space-y-2 mb-4">
+<li class="flex items-start gap-2 text-sm text-on-surface font-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>ไม่ต้องสำรองจ่ายเมื่อเข้า รพ. ในเครือกว่า 400 แห่ง</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-on-surface font-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>ครอบคลุมทั้งค่าห้อง ผ่าตัด ยาสมัยใหม่ และมะเร็งแบบมุ่งเป้า</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-on-surface font-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>มีคิมดูแลเคสให้คำปรึกษาตลอด 24 ชม. ไม่ต้องกังวลเรื่องเอกสาร</span>
+</li>
+</ul>
+<!-- Action Grid -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-xl border border-primary text-primary font-label-md text-label-md hover:bg-surface-container-low active:scale-[0.98] transition" onclick="openModal('First Class 5M')">
+            ดูรายละเอียด
+          </button>
+<a class="h-11 rounded-xl bg-amber-400 hover:bg-amber-500 text-primary font-label-md text-label-md font-bold flex items-center justify-center active:scale-[0.98] transition shadow-sm" href="#consultation-form">
+            ขอใบเสนอราคา
+          </a>
+</div>
+</div>
+<!-- Plan Card 2: Smart Tax 10/5 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-space-lg shadow-[0_4px_16px_-4px_rgba(15,41,66,0.06)] relative">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded-md bg-amber-50 text-amber-800 font-label-sm text-[11px] font-semibold border border-amber-200">
+            ลดหย่อนภาษี
+          </span>
+<span class="font-body-sm text-[12px] text-outline">ชำระเบี้ยสั้น 5 ปี</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Smart Tax 10/5 สะสมทรัพย์ประหยัดภาษี</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ออมสั้น คืนทุนไว พร้อมลดหย่อนภาษีเงินได้ตามกฎหมาย</p>
+<!-- Metric Block -->
+<div class="my-4 p-3.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-baseline justify-between">
+<div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">ลดหย่อนภาษีสูงสุด</div>
+<div class="font-headline-lg text-headline-lg font-bold text-primary">100,000 <span class="text-sm font-normal text-on-surface">บ./ปี</span></div>
+</div>
+<div class="text-right">
+<div class="font-body-sm text-[11px] text-on-surface-variant">การันตีเงินคืนสม่ำเสมอ</div>
+<div class="font-label-md text-label-md font-bold text-secondary">รับเงินคืนทุกปี</div>
+</div>
+</div>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start gap-2 text-sm text-on-surface font-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>จ่ายเบี้ยเพียง 5 ปี คุ้มครองชีวิตยาวนาน 10 ปี</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-on-surface font-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>ครบสัญญารับเงินก้อนคืน 500%+ ของทุนประกันเริ่มต้น</span>
+</li>
+</ul>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-xl border border-primary text-primary font-label-md text-label-md hover:bg-surface-container-low active:scale-[0.98] transition" onclick="openModal('Smart Tax 10/5')">
+            ดูรายละเอียด
+          </button>
+<a class="h-11 rounded-xl bg-amber-400 hover:bg-amber-500 text-primary font-label-md text-label-md font-bold flex items-center justify-center active:scale-[0.98] transition shadow-sm" href="#consultation-form">
+            ขอใบเสนอราคา
+          </a>
+</div>
+</div>
+<!-- Plan Card 3: Critical Illness เจอ จ่าย จบ -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-space-lg shadow-[0_4px_16px_-4px_rgba(15,41,66,0.06)] relative">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded-md bg-rose-50 text-rose-800 font-label-sm text-[11px] font-semibold border border-rose-200">
+            เบี้ยคงที่ตลอดชีพ
+          </span>
+<span class="font-body-sm text-[12px] text-outline">รับเงินสดทันที</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">โรคร้ายแรง เจอ จ่าย จบ Super Care</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ตรวจพบระยะเริ่มต้นหรือลุกลาม รับเงินสดก้อนโตใช้รักษาทันที</p>
+<!-- Metric Block -->
+<div class="my-4 p-3.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-baseline justify-between">
+<div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">คุ้มครองเงินก้อนสูงสุด</div>
+<div class="font-headline-lg text-headline-lg font-bold text-rose-700">1,000,000 <span class="text-sm font-normal text-on-surface">บ.</span></div>
+</div>
+<div class="text-right">
+<div class="font-body-sm text-[11px] text-on-surface-variant">เบี้ยคงที่ ไม่ปรับตามอายุ</div>
+<div class="font-label-md text-label-md font-bold text-primary">เริ่มต้น 590 บ./ด.</div>
+</div>
+</div>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start gap-2 text-sm text-on-surface font-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>ครอบคลุมกลุ่มโรคร้ายแรง มะเร็ง หัวใจ ไตวาย เส้นเลือดสมอง</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-on-surface font-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>เงินก้อนโอนตรงถึงคุณ มีอิสระเลือกใช้จ่ายค่ารักษาหรือเลี้ยงดูครอบครัว</span>
+</li>
+</ul>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-xl border border-primary text-primary font-label-md text-label-md hover:bg-surface-container-low active:scale-[0.98] transition" onclick="openModal('โรคร้ายแรง เจอ จ่าย จบ')">
+            ดูรายละเอียด
+          </button>
+<a class="h-11 rounded-xl bg-amber-400 hover:bg-amber-500 text-primary font-label-md text-label-md font-bold flex items-center justify-center active:scale-[0.98] transition shadow-sm" href="#consultation-form">
+            ขอใบเสนอราคา
+          </a>
+</div>
+</div>
+</section>
+<!-- ================= INTERACTIVE PREMIUM CALCULATOR ================= -->
+<section class="bg-surface-container-lowest rounded-2xl border-2 border-secondary/30 p-space-lg shadow-md" id="calculator">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-8 h-8 rounded-lg bg-teal-100 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">calculate</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">คำนวณเบี้ยประกันเบื้องต้น</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+        เลือกข้อมูลเพื่อเช็กอัตราเบี้ยโดยประมาณได้ทันที
+      </p>
+<!-- Gender Selection -->
+<div class="mb-4">
+<label class="font-label-md text-label-md text-on-surface font-semibold block mb-2">เพศของผู้เอาประกัน</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="gender-btn h-11 rounded-xl border-2 border-secondary bg-teal-50/60 text-secondary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition" id="gender-male" onclick="setGender('male')" type="button">
+<span class="material-symbols-outlined text-[18px]">male</span>
+<span>เพศชาย</span>
+</button>
+<button class="gender-btn h-11 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-2 transition" id="gender-female" onclick="setGender('female')" type="button">
+<span class="material-symbols-outlined text-[18px]">female</span>
+<span>เพศหญิง</span>
+</button>
+</div>
+</div>
+<!-- Age Slider Selection -->
+<div class="mb-4">
+<div class="flex justify-between items-center mb-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="age-slider">อายุปัจจุบัน</label>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary bg-teal-50 px-2.5 py-0.5 rounded-lg border border-teal-200" id="age-display">30 ปี</span>
+</div>
+<input class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-secondary" id="age-slider" max="75" min="1" oninput="updateCalculator()" type="range" value="30"/>
+<div class="flex justify-between text-[11px] text-outline mt-1 font-body-sm">
+<span>1 ขวบ</span>
+<span>35 ปี</span>
+<span>75 ปี</span>
+</div>
+</div>
+<!-- Plan Selection -->
+<div class="mb-5">
+<label class="font-label-md text-label-md text-on-surface font-semibold block mb-1" for="calc-plan">แผนความคุ้มครองที่สนใจ</label>
+<div class="relative">
+<select class="w-full h-12 pl-3 pr-9 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface font-body-md focus:border-secondary focus:ring-secondary/20" id="calc-plan" onchange="updateCalculator()">
+<option value="health5m">ประกันสุขภาพเหมาจ่าย 5 ล้าน (ยอดนิยม)</option>
+<option value="health1m">ประกันสุขภาพเหมาจ่ายมาตรฐาน 1 ล้าน</option>
+<option value="taxsaving">ประกันสะสมทรัพย์ ลดหย่อนภาษี</option>
+<option value="critical">ประกันโรคร้ายแรง เจอ จ่าย จบ</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+<!-- Calculation Result Card -->
+<div class="p-4 rounded-xl bg-gradient-to-br from-primary-container to-[#001f3f] text-white text-center mb-4 shadow-inner">
+<div class="font-body-sm text-[12px] text-surface-container-highest">ประมาณการเบี้ยประกันของคุณ</div>
+<div class="font-display-lg-mobile text-[32px] font-extrabold text-amber-400 my-0.5">
+<span id="calc-result">1,480</span> <span class="text-lg font-semibold text-white">บ./เดือน</span>
+</div>
+<div class="font-body-sm text-[11px] text-surface-container-highest" id="calc-subtext">
+          (หรือประมาณ 17,760 บ./ปี - คุ้มครองเหมาจ่าย 5 ล้านบาท)
+        </div>
+</div>
+<!-- Action Button -->
+<a class="w-full h-12 flex items-center justify-center gap-2 rounded-xl bg-secondary hover:bg-secondary/90 text-white font-label-lg text-label-lg shadow active:scale-[0.98] transition" href="https://line.me" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>รับตารางเปรียบเทียบฟรีทาง LINE</span>
+</a>
+<p class="font-body-sm text-[10px] text-center text-outline mt-2">
+        *การคำนวณข้างต้นเป็นการประมาณการเบื้องต้น เบี้ยที่แท้จริงขึ้นอยู่กับขั้นอาชีพและประวัติสุขภาพ
+      </p>
+</section>
+<!-- ================= WHY CHOOSE AGENT KIM ================= -->
+<section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-space-lg">
+<div class="text-center mb-5">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-teal-50 text-secondary font-label-sm text-[11px] font-bold border border-teal-200 mb-1.5">
+          ทำไมลูกค้ากว่า 5,000 ท่านเลือกคิม
+        </span>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">ความต่างที่คุณสัมผัสได้จริง</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">บริการจากใจ เปรียบเทียบอย่างตรงไปตรงมา ไม่ผูกมัด</p>
+</div>
+<div class="space-y-3.5">
+<!-- Benefit 1 -->
+<div class="flex items-start gap-3.5 p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/20">
+<div class="w-11 h-11 rounded-xl bg-teal-100 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">compare_arrows</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[15px] font-bold text-primary">เปรียบเทียบจากหลายบริษัทชั้นนำ</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              ไม่ผูกขาดบริษัทเดียว คิมเลือกแผนที่ให้ความคุ้มครองคุ้มค่าเงินที่สุดสำหรับงบประมาณของคุณ
+            </p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="flex items-start gap-3.5 p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/20">
+<div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[15px] font-bold text-primary">อยู่เคียงข้าง ดูแลสินไหม 24 ชม.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              เจ็บป่วย นอนโรงพยาบาล หรือเกิดอุบัติเหตุ คิมช่วยประสานงาน รพ. และติดตามเรื่องเคลมให้จนจบ
+            </p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="flex items-start gap-3.5 p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/20">
+<div class="w-11 h-11 rounded-xl bg-blue-100 text-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[15px] font-bold text-primary">โปร่งใส อธิบายชัดทุกเงื่อนไข</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              บอกหมดทั้งข้อดี ข้อยกเว้น และระยะเวลารอคอย ไม่มีหมกเม็ด เพื่อให้คุณสบายใจและเข้าใจสิทธิ์เต็มร้อย
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CLIENT REVIEWS & TESTIMONIALS ================= -->
+<section class="space-y-3">
+<div class="flex justify-between items-end">
+<div>
+<div class="flex items-center gap-1 text-amber-500 mb-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-primary ml-1 text-sm">4.9 / 5.0</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">เสียงจากลูกค้าจริง</h2>
+</div>
+<span class="font-body-sm text-outline text-[12px]">340+ รีวิว</span>
+</div>
+<!-- Testimonial Cards Carousel / Stack -->
+<div class="space-y-3">
+<!-- Review 1 -->
+<div class="p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-primary text-sm">
+                พ
+              </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">คุณพิมพ์ชนก (กทม.)</div>
+<div class="font-body-sm text-[11px] text-outline">ลูกค้าประกันสุขภาพเหมาจ่าย</div>
+</div>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-[13px] text-on-surface leading-relaxed">
+            "ตอนผ่าตัดไส้ติ่งด่วนตกใจมาก ติดต่อคุณคิมตอนสี่ทุ่ม คุณคิมช่วยประสานงานแฟกซ์เคลมกับทาง รพ. ให้เรียบร้อย ไม่ต้องสำรองเงินสักบาท ดูแลดีเหมือนคนในครอบครัวจริงๆ ค่ะ"
+          </p>
+</div>
+<!-- Review 2 -->
+<div class="p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-primary text-sm">
+                ว
+              </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">คุณวรุตม์ (นนทบุรี)</div>
+<div class="font-body-sm text-[11px] text-outline">ลูกค้าประกันลดหย่อนภาษี &amp; ออมเงิน</div>
+</div>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-[13px] text-on-surface leading-relaxed">
+            "คิมอธิบายตัวเลขได้เห็นภาพมาก ไม่มีการกดดันให้ซื้อ แนะนำแผนที่ช่วยประหยัดภาษีได้เต็มสิทธิ แถมเงินคืนตามเป้าหมาย ประทับใจความเป็นมืออาชีพครับ"
+          </p>
+</div>
+</div>
+</section>
+<!-- ================= CONSULTATION / CONTACT FORM ================= -->
+<section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-space-lg shadow-sm" id="consultation-form">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">นัดหมายปรึกษาคิมโดยตรง</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+        กรอกข้อมูลเพื่อให้คิมติดต่อกลับและเตรียมแผนเฉพาะบุคคล ไม่มีค่าใช้จ่ายใดๆ
+      </p>
+<form class="space-y-3" onsubmit="handleFormSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="client-name">ชื่อ - นามสกุล *</label>
+<input class="w-full h-11 px-3.5 rounded-xl border border-outline-variant text-on-surface text-sm focus:border-secondary focus:ring-secondary/20" id="client-name" placeholder="ระบุชื่อของคุณ" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="client-phone">เบอร์โทรศัพท์ติดต่อ *</label>
+<input class="w-full h-11 px-3.5 rounded-xl border border-outline-variant text-on-surface text-sm focus:border-secondary focus:ring-secondary/20" id="client-phone" placeholder="08x-xxx-xxxx" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="client-line">LINE ID (สะดวกตอบทางไลน์)</label>
+<input class="w-full h-11 px-3.5 rounded-xl border border-outline-variant text-on-surface text-sm focus:border-secondary focus:ring-secondary/20" id="client-line" placeholder="ไอดีไลน์ของคุณ" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="client-interest">เรื่องที่ต้องการปรึกษา</label>
+<select class="w-full h-11 px-3.5 rounded-xl border border-outline-variant text-on-surface text-sm focus:border-secondary focus:ring-secondary/20" id="client-interest">
+<option>ประกันสุขภาพเหมาจ่าย</option>
+<option>วางแผนลดหย่อนภาษีปลายปี</option>
+<option>ประกันโรคร้ายแรง เจอ จ่าย จบ</option>
+<option>ประกันชีวิตคุ้มครองครอบครัว</option>
+<option>วางแผนเกษียณและประกันบำนาญ</option>
+<option>ตรวจสอบและปรับปรุงกรมธรรม์เดิม</option>
+</select>
+</div>
+<button class="w-full h-12 rounded-xl bg-amber-400 hover:bg-amber-500 text-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition mt-2" type="submit">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>ส่งข้อมูลนัดหมายปรึกษาฟรี</span>
+</button>
+</form>
+<div class="hidden mt-3 p-3 rounded-xl bg-teal-50 border border-teal-200 text-secondary text-center text-sm font-label-md" id="form-success">
+        ✓ ได้รับข้อมูลแล้วครับ คิมจะติดต่อกลับโดยเร็วที่สุดครับ
+      </div>
+</section>
+<!-- ================= AGENT CREDENTIALS CARD ================= -->
+<section class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30 flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-white shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up face shot of professional Asian insurance agent Kim smiling warmly against an elegant modern corporate studio background with subtle ambient navy accents, exuding friendliness, integrity and authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXw1qjCLG_bq2hA5pq1FZf_6NDBWXqfD3IYEf_7QuCDGKpfFZpZtwwBsI9H5eWryWWnMcm3aQPsHyl-BloGacqHEdsGFGiVrEEK7nd0YXHpMEiEMDWDpIeosghp5JMMJ6HV6VlaMzeuY46swAntcb8Tq3XFqsliRdk8FGcU9FL4wjZs05hxHJHD7SMUKPyse2cxRlAFYI1u8GcHAy5k5-1l1xtEH1MHoBtCBi32qaU6f8ePVTllTPZ3Q"/>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">คุณคิม - ภัทรพล วงศ์สวัสดิ์</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-snug">
+          ตัวแทนประกันชีวิตและที่ปรึกษาการเงิน (MDRT Qualification)<br/>
+          โทรสายตรง: <a class="text-secondary font-semibold underline" href="tel:0891234567">089-123-4567</a>
+</p>
+</div>
+</section>
+</main>
+<!-- ================= MODAL DETAIL POPUP ================= -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4" id="detail-modal">
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-2xl p-5 shadow-2xl relative">
+<button class="absolute top-4 right-4 text-outline hover:text-primary" onclick="closeModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-teal-50 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[24px]">description</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mb-2" id="modal-title">รายละเอียดความคุ้มครอง</h3>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-2 mb-4">
+<p>• คุ้มครองครอบคลุมตามมาตรฐาน คปภ. เลือกรักษาได้ทุก รพ. ชั้นนำทั่วประเทศ</p>
+<p>• บริการเรียกร้องสินไหมผ่านช่องทางออนไลน์ ไม่ต้องส่งเอกสารตัวจริงในเคสทั่วไป</p>
+<p>• ตารางผลประโยชน์และใบเสนอราคาฉบับเต็มจะถูกจัดส่งให้พิจารณาอย่างละเอียด</p>
+</div>
+<div class="flex gap-2">
+<a class="flex-1 h-11 rounded-xl bg-amber-400 text-primary font-label-md flex items-center justify-center font-bold" href="#consultation-form" onclick="closeModal()">
+          ขอใบเสนอราคา
+        </a>
+<button class="px-4 h-11 rounded-xl border border-outline-variant text-on-surface font-label-md" onclick="closeModal()">
+          ปิด
+        </button>
+</div>
+</div>
+</div>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component Anchor) ================= -->
+<!-- Context: Homepage is active, mapping to label "หน้าแรก" -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-space-xs bg-surface-container-lowest max-w-md mx-auto left-1/2 -translate-x-1/2 shadow-[0_-4px_24px_rgba(15,41,66,0.08)]">
+<!-- Item 1: หน้าแรก (Active Destination) -->
+<a class="flex flex-col items-center justify-center text-secondary font-semibold py-1 active:scale-[0.96] transition-transform duration-100 hover:text-secondary" href="#">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm mt-0.5">หน้าแรก</span>
+</a>
+<!-- Item 2: แผนประกัน -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-normal py-1 active:scale-[0.96] transition-transform duration-100 hover:text-secondary" href="#plans">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+<span class="font-label-sm text-label-sm mt-0.5">แผนประกัน</span>
+</a>
+<!-- Item 3: คำนวณเบี้ย -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-normal py-1 active:scale-[0.96] transition-transform duration-100 hover:text-secondary" href="#calculator">
+<span class="material-symbols-outlined text-[22px]">calculate</span>
+<span class="font-label-sm text-label-sm mt-0.5">คำนวณเบี้ย</span>
+</a>
+<!-- Item 4: โทรด่วน (Direct Hotline) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-normal py-1 active:scale-[0.96] transition-transform duration-100 hover:text-secondary" href="tel:0891234567">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+<span class="font-label-sm text-label-sm mt-0.5">โทรด่วน</span>
+</a>
+</nav>
+<!-- ================= MICRO-INTERACTIONS SCRIPT ================= -->
+<script>
+    let currentGender = 'male';
+
+    function setGender(gender) {
+      currentGender = gender;
+      const maleBtn = document.getElementById('gender-male');
+      const femaleBtn = document.getElementById('gender-female');
+
+      if (gender === 'male') {
+        maleBtn.className = 'gender-btn h-11 rounded-xl border-2 border-secondary bg-teal-50/60 text-secondary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition';
+        femaleBtn.className = 'gender-btn h-11 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-2 transition';
+      } else {
+        femaleBtn.className = 'gender-btn h-11 rounded-xl border-2 border-secondary bg-teal-50/60 text-secondary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition';
+        maleBtn.className = 'gender-btn h-11 rounded-xl border border-outline-variant bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-2 transition';
+      }
+      updateCalculator();
+    }
+
+    function updateCalculator() {
+      const age = parseInt(document.getElementById('age-slider').value);
+      document.getElementById('age-display').innerText = age + ' ปี';
+      
+      const plan = document.getElementById('calc-plan').value;
+      let baseRate = 1200;
+
+      if (plan === 'health5m') {
+        baseRate = 1200 + (age * 18);
+        if (currentGender === 'female') baseRate += 90;
+      } else if (plan === 'health1m') {
+        baseRate = 850 + (age * 12);
+      } else if (plan === 'taxsaving') {
+        baseRate = 2500;
+      } else if (plan === 'critical') {
+        baseRate = 450 + (age * 9);
+      }
+
+      const formattedRate = baseRate.toLocaleString('th-TH');
+      const annualRate = (baseRate * 12).toLocaleString('th-TH');
+      
+      document.getElementById('calc-result').innerText = formattedRate;
+      document.getElementById('calc-subtext').innerText = `(หรือประมาณ ${annualRate} บ./ปี - แผนที่คุณเลือก)`;
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').classList.remove('hidden');
+      setTimeout(() => {
+        alert('ขอบคุณที่ไว้วางใจครับ คิมจะติดต่อกลับตามเบอร์โทรศัพท์ที่ท่านแจ้งไว้');
+      }, 300);
+    }
+
+    function openModal(title) {
+      document.getElementById('modal-title').innerText = title;
+      const modal = document.getElementById('detail-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('detail-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  </script>
+</body></html>
